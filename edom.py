@@ -52,5 +52,5 @@ except IOError as err1:
 else:
 	print colored('Please insert code to create log file for this script', 'yellow')
 
-#subprocess.call(['zmmtactl', 'reload'])
+subprocess.call(['zmmtactl', 'reload'])
 print colored("Script completed", 'green')
