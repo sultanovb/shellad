@@ -44,7 +44,8 @@ try:
 				line = line.strip()
 				subprocess.call(['zmprov', 'grr', 'dl', line, 'edom', domainCL, 'sendToDistList'])
 				subprocess.call(['zmprov', 'grr', 'dl', line, 'edom', domainCOM, 'sendToDistList'])
-				print colored(line + ' ->  Done.', 'green')
+				arrow = colored(' ->  Done.', 'green')
+				print(line + arrow)
 	except IOError as err:
 		print colored(err, 'red')
 except IOError as err1:
